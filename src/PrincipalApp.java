@@ -5,6 +5,8 @@ public class PrincipalApp {
 		int [] numeros  = {31,3,64,14,40,78,21,11} ;
 		Edad resultado = new Edad(numeros);
 		
+		String frase = resultado.getedad(numeros);
+		System.out.println(frase);
 	}
 
 }

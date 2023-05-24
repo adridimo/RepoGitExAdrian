@@ -12,11 +12,19 @@ public class Edad {
 		
 		for (int i =0; i<numeros.length;i++) {
 			if (numeros[i] <18) {
+				menores++;
+			} 
+			if (numeros[i]>=18 && numeros[i]<65 ) {
+				mayores++;
+			}
 				
+			if (numeros[i]>=65) {
+				jubilados++;
 			}
 			
 		}
-		String frase = null; 
+		String frase = "Menores de edad: " + menores + ","
+						+ " Mayores de edad: " + mayores + ", Jubilados: " + jubilados; 
 		return frase;
 	}
 }
